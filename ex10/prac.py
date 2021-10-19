@@ -33,27 +33,27 @@
 # tmp = sorted(tmp, reverse=True)
 # print(tmp)
 
-fhandle = open("romeo.txt")
-counts = dict()
+# fhandle = open("romeo.txt")
+# counts = dict()
 
-for line in fhandle:
-    words = line.split()
-    for word in words:
-        counts[word] = counts.get(word, 0) + 1
+# for line in fhandle:
+#     words = line.split()
+#     for word in words:
+#         counts[word] = counts.get(word, 0) + 1
 
-lst = list()
+# lst = list()
 
-for key, val in counts.items():
-    newTup = (val, key)
-    lst.append(newTup)
+# for key, val in counts.items():
+#     newTup = (val, key)
+#     lst.append(newTup)
 
-lst = sorted(lst, reverse=True)
-print(lst)
-for val, key in lst[:10]:
-    print(key, val)
+# lst = sorted(lst, reverse=True)
+# print(lst)
+# for val, key in lst[:10]:
+#     print(key, val)
 
-
-
+dic = {"a" :10, "b" :1, "c" :22}
+print(sorted( [ (v, k) for (k, v) in dic.items() ], reverse=True ))
 
 
 
