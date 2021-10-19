@@ -24,11 +24,37 @@
 # for key, val in sorted(d.items()):
 #     print(key, val)
 
-c = {"a" :10, "b" :1, "c" :22}
-tmp = list()
+# c = {"a" :10, "b" :1, "c" :22}
+# tmp = list()
 
-for key, val in c.items():
-    tmp.append( (val, key) )
+# for key, val in c.items():
+#     tmp.append( (val, key) )
 
-tmp = sorted(tmp, reverse=True)
-print(tmp)
+# tmp = sorted(tmp, reverse=True)
+# print(tmp)
+
+fhandle = open("romeo.txt")
+counts = dict()
+
+for line in fhandle:
+    words = line.split()
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+
+lst = list()
+
+for key, val in counts.items():
+    newTup = (val, key)
+    lst.append(newTup)
+
+lst = sorted(lst, reverse=True)
+print(lst)
+for val, key in lst[:10]:
+    print(key, val)
+
+
+
+
+
+
+
