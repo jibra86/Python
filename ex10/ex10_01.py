@@ -1,24 +1,27 @@
+dictAddress = dict()
+lst = list()
+
 fhandle = input("Enter the name of the file: ")
-no_messages = {}
-lst = []
 try:
     fh = open(fhandle)
 except:
     print("Invalid Input!!")
     quit()
 
-for line in fh:
-    lines = line.strip()
-    if lines.startswith("From "):
+for lines in fh:
+    line = lines.rstrip()
+    if line.startswith("From "):
         words = line.split()
-        word = words[1].split("@")
-        person = words[1]
-        # print(person)
-        no_messages[person] = no_messages.get(person, 0) + 1
-        # print(no_messages)
+        word = words[1]
+        if word not in dictAddress:
+            dictAddress[word] = 1
+        else:
+            dictAddress[word] += 1
 
-for (email, count) in no_messages.items():
-            newTup = (email, count)
-            lst.append(newTup)
+for (key, val) in list(dictAddress.items()):
+    lst.append((val, key))
+    
+lst.sort(reverse=True)
 
-
+for count, email in lst[:1]:
+    print(email, count)
