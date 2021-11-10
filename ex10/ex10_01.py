@@ -1,11 +1,24 @@
-fhandle = open("mbox-short.txt")
-dic = {}
+fhandle = input("Enter the name of the file: ")
+no_messages = {}
+lst = []
+try:
+    fh = open(fhandle)
+except:
+    print("Invalid Input!!")
+    quit()
 
-for line in fhandle:
-    line = line.strip()
-    if line.startswith("From "):
+for line in fh:
+    lines = line.strip()
+    if lines.startswith("From "):
         words = line.split()
-        address = words[1]
-        print(address)
-        for key, val in address:
-            
+        word = words[1].split("@")
+        person = words[1]
+        # print(person)
+        no_messages[person] = no_messages.get(person, 0) + 1
+        # print(no_messages)
+
+for (email, count) in no_messages.items():
+            newTup = (email, count)
+            lst.append(newTup)
+
+
