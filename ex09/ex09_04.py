@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+####
+## Print out from which domain the commits were committed and how many times were committed
+####
+
 fname = input("Enter the name of the file: ")
 
 try:

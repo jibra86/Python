@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+####
+## Print out how many times a person from a specific email address has made commits from the given file
+####
 fh = open("mbox-short.txt")
 count = dict()
 for line in fh:

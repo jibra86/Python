@@ -1,3 +1,7 @@
+####
+##Setting up a Program to Compute the Regular Pay and the Over Time Pay of a Worker Using if and elif
+####
+
 h = input("Enter hours: ")
 r = input("Enter rate per hours: ")
 

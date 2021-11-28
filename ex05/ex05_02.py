@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+####
+## Finding the maximum and minim input by the user
+####
+
 maximum = None
 minimum = None
 

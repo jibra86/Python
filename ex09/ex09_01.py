@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+####
+## Print out how many times a commit was made in a certain date from the given file
+####
+
 fh = open("mbox-short.txt")
 count = dict()
 

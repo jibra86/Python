@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+####
+## Find out how many times the line starting with "From " are in the file
+####
 fhandle = input("Enter the name of the file: ")
 fh = open(fhandle)
 

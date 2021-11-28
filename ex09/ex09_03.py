@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+####
+## Print out the person that had made the most commits from the file 'mbox-short.txt'
+####
+
 theDictionary = dict()
 numMessages = 0
 theMessenger = ""

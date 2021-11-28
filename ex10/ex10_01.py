@@ -1,3 +1,7 @@
+####
+## Print out how many times a domain address has committed a commit but this time using tuples
+####
+
 dictAddress = dict()
 lst = list()
 

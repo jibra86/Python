@@ -1,3 +1,6 @@
+####
+##Checking the Grade of the Students using if and elif
+####
 score = input("Enter the score of the student: ")
 fscore = float(score)
 

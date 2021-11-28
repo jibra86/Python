@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+####
+##Check for the Grade of The Students
+####
 score = input("Enter score: ")
 fscore = float(score)
 

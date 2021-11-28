@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+####
+## Print out the content of the file in a list word by word and sort the output by using the sort function
+####
 
 fhandle = input("Enter the name of the file: ")
 fh = open(fhandle)

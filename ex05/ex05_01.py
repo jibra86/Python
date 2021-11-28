@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+####
+## Looking the count of input integer being enterred, the total of the integer that were input and the average
+####
+
 count = 0
 tot = 0
 
