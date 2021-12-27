@@ -52,8 +52,8 @@
 # for val, key in lst[:10]:
 #     print(key, val)
 
-dic = {"a" :10, "b" :1, "c" :22}
-print(sorted( [ (v, k) for (k, v) in dic.items() ], reverse=True ))
+# dic = {"a" :10, "b" :1, "c" :22}
+# print(sorted( [ (v, k) for (k, v) in dic.items() ], reverse=True ))
 
 
 
