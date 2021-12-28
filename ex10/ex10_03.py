@@ -1,3 +1,7 @@
+import string
+
+charToDel = string.whitespace + string.punctuation + string.digits
+
 fhandle = input("Enter the name of the file: ")
 
 try:
@@ -9,19 +13,18 @@ except:
 letters = dict()
 
 for line in fh:
-    line = line.rstrip()
-    for word in line:
-        letters[word] = letters.get(word, 0) + 1
+    line = line.strip()
+    for words in line:
+        if words not in charToDel:
+            letters[words] = letters.get(words, 0) + 1
 
-# print(letters)
+lstOfWords = list()
 
-lst = list()
+for key, val in letters.items():
+    lstOfWords.append( (val, key) )
 
+# print(lstOfWords)
+lstOfWords.sort(reverse=True)
 
-for val, key in letters.items():
-    lst.append( (key, val) )
-
-lst.sort(reverse=True)
-
-for val, key in lst:
+for val, key in lstOfWords:
     print(key, val)
