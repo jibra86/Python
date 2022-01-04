@@ -15,6 +15,7 @@ letters = dict()
 for line in fh:
     line = line.strip()
     for words in line:
+        words = words.lower()
         if words not in charToDel:
             letters[words] = letters.get(words, 0) + 1
 
