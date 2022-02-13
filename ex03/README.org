@@ -1,7 +1,7 @@
 #+TITLE: py4e ex03
 
 * The program ex03.01
-Write a program to calculate the overtime pay and normal pay. If the hours increase 40 then the pay will be overtime and if not then the pay will be normal.
+Write a program to calculate the overtime pay and normal pay. If the hours is greater than 40 then the pay will be overtime and if not then the pay will be normal.
 ** Procedure:
 First use input to ask the user to input a value for hours and rate
 #+begin_src python
@@ -25,5 +25,4 @@ if fhours > 40:
 elif fhours < 40:
     pay = fhours * frate
     print(pay)
-
 #+end_src
