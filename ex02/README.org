@@ -1,0 +1,22 @@
+#+TITLE: py4e exe02
+
+* The program
+Write a program to prompt the user for hours and rate per hour using input to compute gross pay.
+
+First use input to ask the user to input a value for hours and rate
+#+begin_src python
+hours = input("Enter hours: ")
+rate = input("Enter rate per hour: ")
+#+end_src
+
+Then converting the input value into float(decimal point value)
+#+begin_src python
+fhours = float(hours)
+frate = float(rate)
+#+end_src
+
+And as we know that hours into rate equal pay and then just print out the pay using the print function.
+#+begin_src python
+pay = fhours * frate
+print("Pay:", pay)
+#+end_src
