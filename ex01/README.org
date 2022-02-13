@@ -1,0 +1,9 @@
+#+TITLE: py4e ex01
+
+* The program
+In this program we simple used the function in python called print that prints out the content that the user has provided it to print
+
+#+begin_src python
+print(Hello world)
+#+end_src
+The exercise is to print out some random text using print function.
